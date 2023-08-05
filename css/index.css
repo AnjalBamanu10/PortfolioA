@@ -33,7 +33,13 @@ header {
     top: 0;
     z-index: 999;
 }
-
+#head{
+    background: url('../img/rain.jpg');
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color:transparent !important;
+}
 #menu {
     display: none;
 }

@@ -13,6 +13,15 @@ function changeContent(page, event) {
                             <p class="desc">Figma</p>
                         </div>
                     </div>       
+                </div>
+                <div class="project-box two">
+                    <div class="image-content" style="height: 100%;">
+                        <img src="img/Front_View.jpg" alt="" style="object-fit: cover;">
+                        <div class="img-content">
+                            <p class="paragraph">Food Ordering App(Prototype)</p>
+                            <p class="desc">Figma</p>
+                        </div>
+                    </div>       
                 </div>`;
         break;
     case "graphic":

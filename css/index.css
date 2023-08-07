@@ -403,8 +403,15 @@ header {
 
 .project-box {
     position: relative;
-    height: 40rem;
-    width: 30rem;
+    height: 43rem;
+    width: 30.5rem;
+    border-radius: 0.8rem;
+    overflow: hidden;
+}
+.project-box4 {
+    position: relative;
+    height: 50rem;
+    width: 30.5rem;
     border-radius: 0.8rem;
     overflow: hidden;
 }
@@ -422,7 +429,8 @@ header {
     visibility: hidden;
     opacity: 0;
     transition: visibility 0.3s ease-out, opacity 0.3s ease-out;
-
+    display: flex;
+    flex-direction: column;
 }
 
 .desc {
@@ -454,6 +462,7 @@ header {
     font-size: 1.8rem;
     word-break: break-word;
     letter-spacing: 0.1rem;
+    z-index: 11;
 }
 
 .img-content p:nth-of-type(1) {
@@ -470,6 +479,7 @@ header {
     visibility: visible;
     opacity: 1;
     cursor: pointer;
+    /* color: white; */
 }
 
 .project-box img {
@@ -482,13 +492,17 @@ header {
 }
 
 .project-body {
-    padding-top: 5rem;
-    display: grid;
-    grid-gap: 2rem;
-    grid-template-areas:
-        'one two three four'
-        'five five six six'
-        'seven seven eight eight';
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 5rem 10rem 0 10rem;
+}
+
+.project-body4 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 5rem 10rem 0 10rem;
 }
 
 .one {
@@ -501,9 +515,7 @@ header {
 
 .three {
     grid-area: three;
-    background: url('../img/three.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+ 
 }
 
 .four {
@@ -524,6 +536,17 @@ header {
 
 .eight {
     grid-area: eight;
+}
+.pbtn{
+    margin-top: 2rem;
+
+}
+.pbtn a{
+    text-decoration: none;
+    padding: 0.8rem 1rem;
+    color: black;
+    background-color: var(--main-color);
+    border-radius: 5px;
 }
 
 /* Contact section */
@@ -724,7 +747,7 @@ header {
     }
 
     .project-box {
-        width: 29.5rem;
+        width: 32.5rem;
     }
 
     .project-body div:nth-of-type(5),
@@ -783,6 +806,10 @@ header {
     .project-box {
         width: 28.5rem;
     }
+    .project-box4 {
+        width: 63.5rem;
+    }
+   
 
     .project-body div:nth-of-type(5),
     .project-body div:nth-of-type(6),

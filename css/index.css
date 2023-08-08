@@ -347,7 +347,8 @@ header {
 }
 
 .service-box {
-    height: 22rem;
+    height: 30rem;
+    width: 35rem;
     background-color: white;
     box-shadow: 0 0 8px 2px #888888;
     position: relative;
